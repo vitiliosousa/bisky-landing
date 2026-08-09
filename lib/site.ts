@@ -62,7 +62,7 @@ export const faqItems = [
     tag: "Produto",
     tone: "strawberry" as const,
     q: "O que é o Bisky?",
-    a: "É um sistema de gestão feito para confeitarias: pedidos, stock, custos, caixa e lucros num só lugar — no telemóvel ou no computador.",
+    a: "É um sistema de gestão feito para confeitarias: pedidos, stock, custos, caixa e lucros num só lugar, no telemóvel ou no computador.",
   },
   {
     tag: "Público",
@@ -80,7 +80,7 @@ export const faqItems = [
     tag: "App",
     tone: "blueberry" as const,
     q: "Funciona no telemóvel?",
-    a: "Sim. O Bisky foi pensado para usar na produção, entre entregas e no atendimento — no telemóvel, tablet ou computador.",
+    a: "Sim. O Bisky foi pensado para usar na produção, entre entregas e no atendimento, no telemóvel, tablet ou computador.",
   },
   {
     tag: "Dia a dia",

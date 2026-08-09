@@ -17,7 +17,7 @@ export function PlansGrid({ showHeader = true }: PlansGridProps) {
             Escolha o ritmo da sua confeitaria.
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
-            Preços em MZN/mês. Comece com 14 dias de trial — sem cartão
+            Preços em MZN/mês. Comece com 14 dias de trial, sem cartão
             obrigatório no início.
           </p>
         </div>

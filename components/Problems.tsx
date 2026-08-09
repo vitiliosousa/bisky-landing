@@ -9,7 +9,7 @@ const problems = [
   {
     icon: MessageSquareWarning,
     title: "Pedidos perdidos no WhatsApp",
-    text: "Mensagens, prints e cadernos misturados. Um pedido esquecido é um cliente perdido — e um dia de trabalho a mais.",
+    text: "Mensagens, prints e cadernos misturados. Um pedido esquecido é um cliente perdido e um dia de trabalho a mais.",
     tone: "strawberry" as const,
   },
   {
@@ -27,7 +27,7 @@ const problems = [
   {
     icon: TrendingDown,
     title: "Não sabe se está a lucrar",
-    text: "Entra dinheiro, sai dinheiro — mas o lucro do mês fica no escuro. Sem caixa claro, o negócio anda às cegas.",
+    text: "Entra dinheiro, sai dinheiro, mas o lucro do mês fica no escuro. Sem caixa claro, o negócio anda às cegas.",
     tone: "mint" as const,
   },
 ];

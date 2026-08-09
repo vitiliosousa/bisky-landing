@@ -3,7 +3,7 @@ import { Check } from "lucide-react";
 
 const points = [
   "Todos os pedidos num só sítio, com estado claro até à entrega",
-  "Receitas com custo real — e preço de venda com margem",
+  "Receitas com custo real e preço de venda com margem",
   "Alertas de stock antes de faltar o essencial",
   "Caixa e lucros visíveis no dashboard, todos os dias",
 ];
@@ -16,7 +16,7 @@ export function Solution() {
           <div className="relative aspect-[4/5] sm:aspect-[5/4] lg:aspect-[4/5]">
             <Image
               src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=1400&q=80"
-              alt="Confeiteira a trabalhar — substitua por foto real"
+              alt="Confeiteira a trabalhar"
               fill
               className="object-cover animate-float"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -30,7 +30,7 @@ export function Solution() {
             A solução
           </p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-            O Bisky põe ordem na confeitaria — e clareza no lucro.
+            O Bisky põe ordem na confeitaria e clareza no lucro.
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
             Em vez de espalhar o negócio por WhatsApp, Excel e cadernos, tem um

@@ -3,7 +3,7 @@ import Image from "next/image";
 const steps = [
   {
     title: "Registe o pedido",
-    text: "Cliente, data de entrega, produtos e valores — tudo numa ficha só.",
+    text: "Cliente, data de entrega, produtos e valores, tudo numa ficha só.",
   },
   {
     title: "Acompanhe a produção",
@@ -21,7 +21,7 @@ export function HowItWorks() {
       <div className="absolute inset-0">
         <Image
           src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=2000&q=80"
-          alt="Doces e cupcakes — substitua por foto real"
+          alt="Doces e cupcakes"
           fill
           className="object-cover"
           sizes="100vw"

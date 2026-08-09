@@ -1,7 +1,7 @@
 const audiences = [
   {
     title: "Confeiteiras a solo",
-    text: "Organizar pedidos e saber se cada bolo dá lucro — sem folhas de cálculo.",
+    text: "Organizar pedidos e saber se cada bolo dá lucro, sem folhas de cálculo.",
   },
   {
     title: "Equipas pequenas",

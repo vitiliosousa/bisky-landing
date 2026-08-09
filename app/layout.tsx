@@ -15,11 +15,11 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Bisky — Gestão da sua confeitaria",
+  title: "Bisky | Gestão da sua confeitaria",
   description:
     "Pedidos, stock, custos e caixa num só lugar. O sistema feito para confeitarias que querem organizar o negócio e lucrar com clareza.",
   openGraph: {
-    title: "Bisky — Gestão da sua confeitaria",
+    title: "Bisky | Gestão da sua confeitaria",
     description:
       "Pare de gerir a confeitaria no WhatsApp e no caderno. Com o Bisky, pedidos, stock e lucros ficam sob controlo.",
     locale: "pt",

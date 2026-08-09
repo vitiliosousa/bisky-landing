@@ -11,7 +11,7 @@ const features = [
   {
     icon: LayoutDashboard,
     title: "Dashboard",
-    text: "Receita, pedidos, a receber e lucro — o dia da confeitaria num relance.",
+    text: "Receita, pedidos, a receber e lucro: o dia da confeitaria num relance.",
     soft: "bg-strawberry-soft",
     color: "text-strawberry",
   },
@@ -39,7 +39,7 @@ const features = [
   {
     icon: Wallet,
     title: "Fluxo de caixa",
-    text: "Entradas, saídas e contas a pagar — o dinheiro deixa de ser mistério.",
+    text: "Entradas, saídas e contas a pagar. O dinheiro deixa de ser mistério.",
     soft: "bg-strawberry-soft",
     color: "text-strawberry",
   },
@@ -61,7 +61,7 @@ export function Features() {
             Funcionalidades
           </p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-            Tudo o que a confeitaria precisa — num só app.
+            Tudo o que a confeitaria precisa, num só app.
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
             Feito para o telemóvel e para o computador. Simples de usar no meio

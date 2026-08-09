@@ -6,7 +6,7 @@ export function Hero() {
     <section className="relative min-h-[100svh] overflow-hidden">
       <Image
         src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=2400&q=80"
-        alt="Bolo decorado — substitua por foto real da sua confeitaria"
+        alt="Bolo decorado"
         fill
         priority
         className="object-cover object-center"
@@ -30,7 +30,7 @@ export function Hero() {
             A sua confeitaria organizada. Sem stress.
           </h1>
           <p className="animate-fade-up delay-2 mt-5 max-w-lg text-base leading-relaxed text-white/90 sm:text-lg">
-            Pedidos, stock, custos e caixa num só lugar — feito para quem vive
+            Pedidos, stock, custos e caixa num só lugar, feito para quem vive
             de bolos e doces.
           </p>
           <div className="animate-fade-up delay-3 mt-8 flex flex-wrap items-center gap-3">

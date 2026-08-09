@@ -16,7 +16,7 @@ export function Footer() {
             />
           </Link>
           <p className="mt-3 max-w-xs text-sm text-muted">
-            Gestão da sua confeitaria. Pedidos, stock, custos e caixa — com
+            Gestão da sua confeitaria. Pedidos, stock, custos e caixa com
             clareza.
           </p>
         </div>
@@ -54,12 +54,8 @@ export function Footer() {
       </div>
 
       <div className="border-t border-line">
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-5 text-xs text-muted sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl px-5 py-5 text-xs text-muted sm:px-6 lg:px-8">
           <p>© {new Date().getFullYear()} Bisky. Todos os direitos reservados.</p>
-          <p>
-            Mockups da app e fotos são provisórios — substitua por screenshots
-            reais.
-          </p>
         </div>
       </div>
     </footer>

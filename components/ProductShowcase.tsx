@@ -141,7 +141,7 @@ const highlights = [
   {
     icon: LayoutDashboard,
     title: "Dashboard claro",
-    text: "Receita, pedidos, a receber e lucro — sem abrir cinco apps.",
+    text: "Receita, pedidos, a receber e lucro, sem abrir cinco apps.",
   },
   {
     icon: ClipboardList,
@@ -172,8 +172,8 @@ export function ProductShowcase() {
             Veja como o Bisky organiza o dia.
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
-            Mockups fiéis à interface real. Quando tiver screenshots do produto,
-            basta substituir estes ecrãs.
+            Dashboard, pedidos e o dia a dia da confeitaria num ecrã limpo e
+            fácil de usar.
           </p>
         </div>
 
