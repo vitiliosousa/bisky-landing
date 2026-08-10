@@ -4,6 +4,7 @@ import {
   Package,
   TrendingUp,
 } from "lucide-react";
+import { Reveal } from "@/components/Reveal";
 
 function PhoneChrome({ children }: { children: React.ReactNode }) {
   return (
@@ -164,7 +165,7 @@ export function ProductShowcase() {
   return (
     <section id="produto" className="section-pad scroll-mt-24 bg-[#f8f8f9]">
       <div className="mx-auto max-w-6xl">
-        <div className="mx-auto max-w-2xl text-center">
+        <Reveal className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold tracking-wide text-strawberry uppercase">
             Dentro da app
           </p>
@@ -175,38 +176,44 @@ export function ProductShowcase() {
             Dashboard, pedidos e o dia a dia da confeitaria num ecrã limpo e
             fácil de usar.
           </p>
-        </div>
+        </Reveal>
 
-        <div className="mt-12 grid items-end gap-8 lg:grid-cols-[1fr_auto_auto] lg:gap-10">
-          <div className="order-3 grid gap-4 sm:grid-cols-2 lg:order-1 lg:grid-cols-1">
-            {highlights.map((item) => {
+        <div className="mt-12 grid items-center gap-8 lg:grid-cols-[1fr_auto_auto] lg:gap-10">
+          <div className="order-3 grid gap-5 sm:grid-cols-2 lg:order-1 lg:grid-cols-1 lg:gap-6">
+            {highlights.map((item, i) => {
               const Icon = item.icon;
               return (
-                <div key={item.title} className="flex gap-3">
-                  <div className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-white shadow-[var(--shadow-card)]">
-                    <Icon className="size-4 text-strawberry" strokeWidth={1.75} />
+                <Reveal key={item.title} delay={i * 80}>
+                  <div className="flex gap-3">
+                    <div className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-white shadow-[var(--shadow-card)]">
+                      <Icon className="size-4 text-strawberry" strokeWidth={1.75} />
+                    </div>
+                    <div>
+                      <h3 className="text-sm font-semibold text-ink">{item.title}</h3>
+                      <p className="mt-1 text-sm leading-relaxed text-muted">{item.text}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-sm font-semibold text-ink">{item.title}</h3>
-                    <p className="mt-1 text-sm leading-relaxed text-muted">{item.text}</p>
-                  </div>
-                </div>
+                </Reveal>
               );
             })}
           </div>
 
-          <div className="order-1 animate-fade-up lg:order-2">
-            <DashboardMock />
+          <Reveal className="order-1 lg:order-2" delay={100}>
+            <div className="animate-float">
+              <DashboardMock />
+            </div>
             <p className="mt-3 text-center text-xs font-medium text-muted">
               Dashboard
             </p>
-          </div>
-          <div className="order-2 animate-fade-up delay-1 lg:order-3 lg:mb-8">
-            <OrdersMock />
+          </Reveal>
+          <Reveal className="order-2 lg:order-3" delay={220}>
+            <div className="animate-float-alt">
+              <OrdersMock />
+            </div>
             <p className="mt-3 text-center text-xs font-medium text-muted">
               Pedidos
             </p>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>

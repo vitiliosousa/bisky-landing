@@ -6,6 +6,7 @@ import {
   Wallet,
   Calculator,
 } from "lucide-react";
+import { Reveal } from "@/components/Reveal";
 
 const features = [
   {
@@ -54,9 +55,9 @@ const features = [
 
 export function Features() {
   return (
-    <section id="funcionalidades" className="section-pad scroll-mt-8">
+    <section id="funcionalidades" className="section-pad scroll-mt-24">
       <div className="mx-auto max-w-6xl">
-        <div className="mx-auto max-w-2xl text-center">
+        <Reveal className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold tracking-wide text-strawberry uppercase">
             Funcionalidades
           </p>
@@ -67,28 +68,27 @@ export function Features() {
             Feito para o telemóvel e para o computador. Simples de usar no meio
             da produção.
           </p>
-        </div>
+        </Reveal>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {features.map((item) => {
+          {features.map((item, i) => {
             const Icon = item.icon;
             return (
-              <article
-                key={item.title}
-                className="card p-5 sm:p-6 transition duration-300 hover:-translate-y-0.5"
-              >
-                <div
-                  className={`flex size-11 items-center justify-center rounded-2xl ${item.soft}`}
-                >
-                  <Icon className={`size-5 ${item.color}`} strokeWidth={1.75} />
-                </div>
-                <h3 className="mt-4 text-lg font-semibold tracking-tight text-ink">
-                  {item.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
-                  {item.text}
-                </p>
-              </article>
+              <Reveal key={item.title} delay={i * 80}>
+                <article className="card lift p-5 sm:p-6">
+                  <div
+                    className={`flex size-11 items-center justify-center rounded-2xl ${item.soft}`}
+                  >
+                    <Icon className={`size-5 ${item.color}`} strokeWidth={1.75} />
+                  </div>
+                  <h3 className="mt-4 text-lg font-semibold tracking-tight text-ink">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted">
+                    {item.text}
+                  </p>
+                </article>
+              </Reveal>
             );
           })}
         </div>

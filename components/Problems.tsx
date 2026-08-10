@@ -4,6 +4,7 @@ import {
   PackageX,
   TrendingDown,
 } from "lucide-react";
+import { Reveal } from "@/components/Reveal";
 
 const problems = [
   {
@@ -53,9 +54,9 @@ const toneMap = {
 
 export function Problems() {
   return (
-    <section id="problemas" className="section-pad scroll-mt-8">
+    <section id="problemas" className="section-pad scroll-mt-24">
       <div className="mx-auto max-w-6xl">
-        <div className="max-w-2xl">
+        <Reveal className="max-w-2xl">
           <p className="text-sm font-semibold tracking-wide text-strawberry uppercase">
             O caos do dia a dia
           </p>
@@ -65,31 +66,30 @@ export function Problems() {
           <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
             Se reconhece algum destes momentos, o Bisky foi feito para si.
           </p>
-        </div>
+        </Reveal>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2">
-          {problems.map((item) => {
+          {problems.map((item, i) => {
             const tone = toneMap[item.tone];
             const Icon = item.icon;
             return (
-              <article
-                key={item.title}
-                className="card flex gap-4 p-5 sm:p-6 transition duration-300 hover:-translate-y-0.5"
-              >
-                <div
-                  className={`flex size-12 shrink-0 items-center justify-center rounded-2xl ${tone.bg}`}
-                >
-                  <Icon className={`size-5 ${tone.icon}`} strokeWidth={1.75} />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold tracking-tight text-ink">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted sm:text-[0.9375rem]">
-                    {item.text}
-                  </p>
-                </div>
-              </article>
+              <Reveal key={item.title} delay={i * 90}>
+                <article className="card lift flex gap-4 p-5 sm:p-6">
+                  <div
+                    className={`flex size-12 shrink-0 items-center justify-center rounded-2xl ${tone.bg}`}
+                  >
+                    <Icon className={`size-5 ${tone.icon}`} strokeWidth={1.75} />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold tracking-tight text-ink">
+                      {item.title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-muted sm:text-[0.9375rem]">
+                      {item.text}
+                    </p>
+                  </div>
+                </article>
+              </Reveal>
             );
           })}
         </div>

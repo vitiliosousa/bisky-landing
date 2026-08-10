@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import { ArrowUpRight, MessageCircleQuestion } from "lucide-react";
 import { faqItems } from "@/lib/site";
+import { Reveal } from "@/components/Reveal";
 
 const tones = {
   strawberry: {
@@ -51,7 +52,7 @@ export function Faq() {
   return (
     <section id="faq" className="section-pad scroll-mt-24">
       <div className="mx-auto max-w-6xl">
-        <div className="max-w-2xl">
+        <Reveal className="max-w-2xl">
           <div className="inline-flex items-center gap-2 rounded-full bg-strawberry-soft px-3 py-1.5 text-xs font-semibold text-strawberry">
             <MessageCircleQuestion className="size-3.5" strokeWidth={2} />
             FAQ
@@ -63,7 +64,7 @@ export function Faq() {
             Seleccione uma questão e a resposta aparece em destaque, com a
             cor do tema Bisky.
           </p>
-        </div>
+        </Reveal>
 
         <div className="mt-10 grid gap-6 lg:grid-cols-[1fr_1.05fr] lg:gap-8 lg:items-start">
           {/* Resposta: no mobile fica em cima e sticky; no desktop à direita */}

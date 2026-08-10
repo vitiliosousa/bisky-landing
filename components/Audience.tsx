@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { User, Users, Store, Check } from "lucide-react";
+import { Reveal } from "@/components/Reveal";
 
 const audiences = [
   {
@@ -83,7 +84,7 @@ export function Audience() {
   return (
     <section className="section-pad">
       <div className="mx-auto max-w-6xl">
-        <div className="mx-auto max-w-2xl text-center">
+        <Reveal className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold tracking-wide text-strawberry uppercase">
             Para quem é
           </p>
@@ -93,30 +94,32 @@ export function Audience() {
           <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
             Escolha o perfil que mais se parece consigo.
           </p>
-        </div>
+        </Reveal>
 
-        <div className="mt-8 flex flex-wrap justify-center gap-2 sm:gap-3">
-          {audiences.map((aud, i) => {
-            const TabIcon = aud.icon;
-            const t = tones[aud.tone];
-            const isActive = active === i;
-            return (
-              <button
-                key={aud.tab}
-                type="button"
-                onClick={() => select(i)}
-                className={`inline-flex min-h-11 items-center gap-2 rounded-full px-4 py-2.5 text-sm font-semibold transition sm:px-5 ${
-                  isActive
-                    ? `${t.active} shadow-sm`
-                    : "bg-[#f4f5f7] text-ink-soft hover:bg-white hover:shadow-[var(--shadow-card)]"
-                }`}
-              >
-                <TabIcon className="size-4" strokeWidth={1.75} />
-                {aud.tab}
-              </button>
-            );
-          })}
-        </div>
+        <Reveal delay={100}>
+          <div className="mt-8 flex flex-wrap justify-center gap-2 sm:gap-3">
+            {audiences.map((aud, i) => {
+              const TabIcon = aud.icon;
+              const t = tones[aud.tone];
+              const isActive = active === i;
+              return (
+                <button
+                  key={aud.tab}
+                  type="button"
+                  onClick={() => select(i)}
+                  className={`inline-flex min-h-11 items-center gap-2 rounded-full px-4 py-2.5 text-sm font-semibold transition sm:px-5 ${
+                    isActive
+                      ? `${t.active} shadow-sm`
+                      : "bg-[#f4f5f7] text-ink-soft hover:bg-white hover:shadow-[var(--shadow-card)]"
+                  }`}
+                >
+                  <TabIcon className="size-4" strokeWidth={1.75} />
+                  {aud.tab}
+                </button>
+              );
+            })}
+          </div>
+        </Reveal>
 
         <div
           ref={panelRef}
