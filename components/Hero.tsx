@@ -38,14 +38,14 @@ export function Hero() {
               href="mailto:ola@bisky.app?subject=Trial%20Bisky"
               className="btn-primary !bg-white !text-strawberry shadow-none hover:!bg-white/95"
             >
-              Começar trial de 14 dias
+              Começar trial de 60 dias
               <ArrowRight className="size-4" strokeWidth={2} />
             </a>
             <a
-              href="#produto"
+              href="#funcionalidades"
               className="btn-ghost !text-white !shadow-[inset_0_0_0_1.5px_rgba(255,255,255,0.45)] hover:!bg-white/10"
             >
-              Ver a app
+              Ver funcionalidades
             </a>
           </div>
         </div>

@@ -16,7 +16,7 @@ export function CTA() {
 
           <div className="relative mx-auto max-w-xl">
             <p className="text-sm font-semibold tracking-wide text-white/85 uppercase">
-              Trial de 14 dias
+              Trial de 60 dias
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
               Pronto para tirar a confeitaria do caos?

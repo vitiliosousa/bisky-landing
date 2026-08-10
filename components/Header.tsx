@@ -53,14 +53,14 @@ export function Header() {
         </nav>
 
         <a
-          href="#planos"
+          href="#comecar"
           className={
             scrolled
               ? "btn-primary !min-h-10"
               : "btn-primary !min-h-10 !bg-white !text-strawberry shadow-none hover:!bg-white/95"
           }
         >
-          Ver planos
+          Começar
         </a>
       </div>
     </header>

@@ -43,7 +43,7 @@ export function Footer() {
                 Planos e preços
               </a>
               <a href="mailto:ola@bisky.app" className="hover:text-strawberry">
-                Pedir trial (14 dias)
+                Pedir trial (60 dias)
               </a>
               <a href="#faq" className="hover:text-strawberry">
                 Perguntas frequentes

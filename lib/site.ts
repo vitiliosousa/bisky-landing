@@ -1,5 +1,5 @@
 export const siteNav = [
-  { href: "#produto", label: "Produto" },
+  { href: "#solucao", label: "Solução" },
   { href: "#funcionalidades", label: "Funcionalidades" },
   { href: "#planos", label: "Planos" },
   { href: "#faq", label: "FAQ" },
@@ -74,7 +74,7 @@ export const faqItems = [
     tag: "Trial",
     tone: "mint" as const,
     q: "Posso experimentar antes de pagar?",
-    a: "Sim. Oferecemos 14 dias de trial para conhecer o sistema com a sua operação real, sem compromisso.",
+    a: "Sim. Oferecemos 60 dias de trial para conhecer o sistema com a sua operação real, sem compromisso.",
   },
   {
     tag: "App",
@@ -105,12 +105,6 @@ export const faqItems = [
     tone: "blueberry" as const,
     q: "Os meus dados ficam seguros?",
     a: "Cada confeitaria tem o seu espaço separado. Os dados do negócio não são misturados com os de outras empresas.",
-  },
-  {
-    tag: "Começar",
-    tone: "strawberry" as const,
-    q: "Como começo?",
-    a: "Peça acesso por email. Criamos a sua conta, activa o trial de 14 dias e guia-o nos primeiros passos.",
   },
 ] as const;
 
