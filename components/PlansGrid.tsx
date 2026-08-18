@@ -25,7 +25,7 @@ export function PlansGrid({ showHeader = true }: PlansGridProps) {
       ) : null}
 
       <div
-        className={`grid gap-5 lg:grid-cols-3 ${showHeader ? "mt-12" : ""}`}
+        className={`mx-auto grid max-w-3xl gap-5 sm:grid-cols-2 ${showHeader ? "mt-12" : ""}`}
       >
         {plans.map((plan, i) => (
           <Reveal
